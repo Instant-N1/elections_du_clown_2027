@@ -1,0 +1,121 @@
+// js/data/parties.js
+
+export const PARTIES = [
+    {
+        id: "lfi_bis",
+        name: "La France Insomniaque",
+        candidate: "Jean-Louis Mégaphone",
+        tagline: "TAXEZ LES RICHES",
+        description: "Prêts à bloquer le pays pour gagner 3 jours de RTT de plus, les yeux cernés par la révolution.",
+        color: "#cc241d",
+        logo: "[⚡]",
+        playable: true,
+        stats: { sondages: 15, acceptabilite: 40, soutienParti: 80, tresorerie: 25000 },
+        ideology: "gauche_radicale",
+        naturalAllies: ["pcf", "eelv"]
+    },
+    {
+        id: "rn_bis",
+        name: "Rassemblement des Nostalgiques",
+        candidate: "Marine Le Paon",
+        tagline: "Ma France, mon pinard",
+        description: "L'art de transformer n'importe quel problème en une question de frontières et de saucisson.",
+        color: "#0a1f44",
+        logo: "[🔥]",
+        playable: true,
+        stats: { sondages: 33, acceptabilite: 25, soutienParti: 60, tresorerie: 20000 },
+        ideology: "exteme_droite",
+        naturalAllies: ["reconquete"]
+    },
+    {
+        id: "lrep_bis",
+        name: "La République en Panne (Horizons)",
+        candidate: "Philippe Aide-en-moins",
+        tagline: "On fera tout mieux qu'avant",
+        description: "Le parti de ceux qui savent tout faire, surtout quand c'est déjà trop tard.",
+        color: "#0066cc",
+        logo: "[🎯]",
+        playable: true,
+        stats: { sondages: 15, acceptabilite: 55, soutienParti: 50, tresorerie: 10000 },
+        ideology: "centre",
+        naturalAllies: ["renaissance"]
+    },
+    {
+        id: "lr_bis",
+        name: "Les Rescapés",
+        candidate: "Bruno Retro",
+        tagline: "C'était mieux avant",
+        description: "Une cathédrale de notables qui regrettent l'époque où on pouvait fumer au restaurant.",
+        color: "#0055a5",
+        logo: "[🌳]",
+        playable: true,
+        stats: { sondages: 8, acceptabilite: 45, soutienParti: 35, tresorerie: 40000 },
+        ideology: "droite",
+        naturalAllies: ["renaissance", "reconquete"]
+    },
+    {
+        id: "renaissance",
+        name: "Une France qui renaît",
+        candidate: "Gabriel Étable",
+        tagline: "La novlangue heureuse",
+        description: "Toujours un sweat à capuche propre et un élément de langage prêt pour esquiver les crises.",
+        color: "#ffcc00",
+        logo: "[✨]",
+        playable: false,
+        stats: { sondages: 8, acceptabilite: 50, soutienParti: 50, tresorerie: 30000 },
+        ideology: "centre",
+        canAbsorbOrMerge: true
+    },
+    {
+        id: "ps",
+        name: "Parti des Saucisses",
+        candidate: "Raphaël Chiantman",
+        tagline: "L'Europe et le pinard bio",
+        description: "Moralisateur, indigné permanent, mais toujours invité dans les beaux salons.",
+        color: "#ff3366",
+        logo: "[🌹]",
+        playable: false,
+        stats: { sondages: 9, acceptabilite: 48, soutienParti: 50, tresorerie: 15000 },
+        ideology: "centre_gauche",
+        canAbsorbOrMerge: true
+    },
+    {
+        id: "eelv",
+        name: "En vert et contre tous",
+        candidate: "Marine Tondeuse",
+        tagline: "Du pain et des éoliennes",
+        description: "Pour l'interdiction de tout ce qui émet de la joie de vivre et du carbone.",
+        color: "#008000",
+        logo: "[🌿]",
+        playable: false,
+        stats: { sondages: 4, acceptabilite: 40, soutienParti: 50, tresorerie: 10000 },
+        ideology: "gauche_ecolo",
+        canAbsorbOrMerge: true
+    },
+    {
+        id: "pcf",
+        name: "Le Parti du Bien Commun",
+        candidate: "Fabien Rouspète",
+        tagline: "Le bon vin, la viande et le frioul",
+        description: "Le coco rétro qui aime la pétanque et critique les bourgeois véganes.",
+        color: "#dd0000",
+        logo: "[🛠️]",
+        playable: false,
+        stats: { sondages: 5, acceptabilite: 55, soutienParti: 50, tresorerie: 12000 },
+        ideology: "gauche_populaire",
+        canAbsorbOrMerge: true
+    },
+    {
+        id: "reconquete",
+        name: "Rien de nouveau !",
+        candidate: "Éric Sans-amour",
+        tagline: "Le déclin de nos chaussettes",
+        description: "Historique, aigri et fasciné par le XVIe siècle.",
+        color: "#1d1d52",
+        logo: "[⚔️]",
+        playable: false,
+        stats: { sondages: 3, acceptabilite: 15, soutienParti: 50, tresorerie: 25000 },
+        ideology: "exteme_droite",
+        canAbsorbOrMerge: true
+    }
+];
